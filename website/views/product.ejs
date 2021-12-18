@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <%- include("./common/head.ejs") %>
+
+</head>
+
+<body>
+    <%- include("./common/navbar.ejs") %>
+        <div id="info-product">
+            <div class="container-sm">
+                <div class="d-flex justify-content-between ">
+                    <div class="col-lg-6 col-md-6 col-12 p-5">
+                        <img src="<%= data[i].image %>" class="w-100 p-3">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 p-5">
+                        <h2 class="w-100">
+                            <%= data[i].title %>
+                        </h2>
+                        <span class="titr">نوع:</span>
+                        <span class="information"><%= data[i].type%></span><br>
+                        <span class="titr">برند:</span>
+                        <span class="information"><%= data[i].brand%></span><br>
+                        <span class="titr">حافظه داخلی:</span>
+                        <span class="information">۶۴ گیگابایت</span><br>
+                        <h3>
+                            <%= data[i].price%>
+                        </h3>
+                        <span>تومان</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="description-product">
+            <div class="container-sm">
+                <p>
+                    <%= data[i].description%>
+                        <%= data[i].description%>
+                            <%= data[i].description%>
+                                <%= data[i].description%>
+                                    <%= data[i].description%>
+                                        <%= data[i].description%>
+                                            <%= data[i].description%>
+                </p>
+            </div>
+        </div>
+        </div>
+
+        <%- include("./common/footer.ejs") %>
+            <%- include("./common/script.ejs") %>
+</body>
+
+</html>

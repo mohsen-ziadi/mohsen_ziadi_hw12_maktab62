@@ -8,35 +8,156 @@
 
 <body>
     <%- include("./common/navbar.ejs") %>
-        <div class="container-sm d-flex justify-content-between flex-wrap pt-4 pb-4">
+        <div class="container-sm d-flex  flex-wrap pt-4 pb-4">
 
-            <% for (let i=0 ; i < data.lenght ; i++ ){ %>
+            <% for (i=0 ; i < data.lenght ; i++ ){ %>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12  p-3">
 
                     <%- include("./common/card.ejs") %>
-
-
 
 
                 </div>
                 <% }%>
 
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12  p-3">
-
-                        <%- include("./common/card.ejs") %>
-
-
-
-
+                        <div class="product-card w-100">
+                            <img src="<%= data[0].image%>" class="w-100">
+                            <div>
+                                <h5>
+                                    <%= data[0].title%>
+                                </h5>
+                                <h3>
+                                    <%= data[0].price%>
+                                </h3>
+                                <span>تومان</span>
+                                <a href="/product/<%= data[0].id%>" id="<%= data[0].id%>" class="button">خرید</a>
+                            </div>
+                        </div>
                     </div>
 
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12  p-3">
+                        <div class="product-card w-100">
+                            <img src="<%= data[1].image%>" class="w-100">
+                            <div>
+                                <h5>
+                                    <%= data[1].title%>
+                                </h5>
+                                <h3>
+                                    <%= data[1].price%>
+                                </h3>
+                                <span>تومان</span>
+                                <a href="/product/<%= data[1].id%>" id="<%= data[1].id%>" class="button">خرید</a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12  p-3">
+                        <div class="product-card w-100">
+                            <img src="<%= data[2].image%>" class="w-100">
+                            <div>
+                                <h5>
+                                    <%= data[2].title%>
+                                </h5>
+                                <h3>
+                                    <%= data[2].price%>
+                                </h3>
+                                <span>تومان</span>
+                                <a href="/product/<%= data[2].id%>" id="<%= data[2].id%>" class="button">خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12  p-3">
+                        <div class="product-card w-100">
+                            <img src="<%= data[3].image%>" class="w-100">
+                            <div>
+                                <h5>
+                                    <%= data[3].title%>
+                                </h5>
+                                <h3>
+                                    <%= data[3].price%>
+                                </h3>
+                                <span>تومان</span>
+                                <a href="/product/<%= data[3].id%>" id="<%= data[3].id%>" class="button">خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12  p-3">
+                        <div class="product-card w-100">
+                            <img src="<%= data[4].image%>" class="w-100">
+                            <div>
+                                <h5>
+                                    <%= data[4].title%>
+                                </h5>
+                                <h3>
+                                    <%= data[4].price%>
+                                </h3>
+                                <span>تومان</span>
+                                <a href="/product/<%= data[4].id%>" id="<%= data[4].id%>" class="button">خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12  p-3">
+                        <div class="product-card w-100">
+                            <img src="<%= data[5].image%>" class="w-100">
+                            <div>
+                                <h5>
+                                    <%= data[5].title%>
+                                </h5>
+                                <h3>
+                                    <%= data[5].price%>
+                                </h3>
+                                <span>تومان</span>
+                                <a href="/product/<%= data[5].id%>" id="<%= data[5].id%>" class="button">خرید</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12  p-3">
+                        <div class="product-card w-100">
+                            <img src="<%= data[6].image%>" class="w-100">
+                            <div>
+                                <h5>
+                                    <%= data[6].title%>
+                                </h5>
+                                <h3>
+                                    <%= data[6].price%>
+                                </h3>
+                                <span>تومان</span>
+                                <a href="/product/<%= data[6].id%>" id="<%= data[6].id%>" class="button">خرید</a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12  p-3">
+                        <div class="product-card w-100">
+                            <img src="<%= data[7].image%>" class="w-100">
+                            <div>
+                                <h5>
+                                    <%= data[7].title%>
+                                </h5>
+                                <h3>
+                                    <%= data[7].price%>
+                                </h3>
+                                <span>تومان</span>
+                                <a href="/product/<%= data[7].id%>" id="<%= data[7].id%>" class="button">خرید</a>
+                            </div>
+                        </div>
+                    </div>
 
-
-
-
-
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12  p-3">
+                        <div class="product-card w-100">
+                            <img src="<%= data[8].image%>" class="w-100">
+                            <div>
+                                <h5>
+                                    <%= data[8].title%>
+                                </h5>
+                                <h3>
+                                    <%= data[8].price%>
+                                </h3>
+                                <span>تومان</span>
+                                <a href="/product/<%= data[8].id%>" id="<%= data[8].id%>" class="button">خرید</a>
+                            </div>
+                        </div>
+                    </div>
 
         </div>
 

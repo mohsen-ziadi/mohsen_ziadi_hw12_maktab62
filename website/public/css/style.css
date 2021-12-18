@@ -29,6 +29,37 @@ p {
     color: #eee;
 }
 
+#info-product {
+    background-color: #000;
+}
+
+#info-product h2 {
+    font-size: 30px;
+    color: #ddd;
+    margin-bottom: 50px;
+}
+
+#info-product span {
+    display: inline-block;
+    font-size: 25px;
+    padding: 0px 0px 30px 15px;
+}
+
+#info-product .titr {
+    color: #ccc;
+}
+
+#info-product .information {
+    color: #666;
+}
+
+#info-product h3 {
+    display: inline-block;
+    font-size: 45px;
+    color: #11a311;
+    margin-top: 70px;
+}
+
 .navbar-brand {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
