@@ -1,0 +1,132 @@
+@font-face {
+    font-family: BMitra;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/BMitraeot');
+    src: url('../fonts/BMitraeot?#iefix') format('embedded-opentype'), /* -- */
+    url('../fonts/BMitra.woff2') format('woff2'), /* -- */
+    url('../fonts/BMitra.woff') format('woff'), /* -- */
+    url('../fonts/BMitrattf') format('truetype');
+}
+
+* {
+    direction: rtl;
+    font-family: BMitra;
+    transition: all .2s;
+    color: #eee;
+}
+
+body {
+    background-color: #111;
+}
+
+a {
+    text-decoration: none;
+    color: #11a311;
+}
+
+p {
+    color: #eee;
+}
+
+.navbar-brand {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    color: rgb(20, 192, 20) !important;
+    font-size: 25px;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#test {
+    width: 300px;
+    height: 200vh;
+}
+
+.social li {
+    list-style-type: none;
+}
+
+.social li a {
+    color: #999;
+    font-size: 60px;
+}
+
+footer {
+    background-color: #333;
+    color: #eee;
+}
+
+footer div {
+    padding: 8px;
+}
+
+footer h4 {
+    background-color: #222;
+    border-bottom: 3px solid #11a311;
+    padding: 7px 12px;
+}
+
+footer p {
+    padding: 5px 10px;
+}
+
+.fa-instagram:hover {
+    color: #fff;
+}
+
+.fa-telegram:hover {
+    color: #0f5392;
+}
+
+.fa-twitter:hover {
+    color: #22bad4;
+}
+
+.fa-github:hover {
+    color: #000;
+}
+
+.product-card {
+    background-color: #000;
+}
+
+.product-card div {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.product-card div h5 {
+    color: #bbb;
+    font-size: 17px;
+}
+
+.product-card div h3 {
+    margin-top: 30px;
+    display: inline-block;
+    color: #11a311;
+    font-size: 28px;
+}
+
+.product-card div span {
+    color: #eee;
+    font-size: 20px;
+}
+
+.product-card a.button {
+    width: 100%;
+    text-align: center;
+    background-color: #11a311;
+    display: block;
+    line-height: 40px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product-card a.button:hover {
+    background-color: #0b520b;
+}
