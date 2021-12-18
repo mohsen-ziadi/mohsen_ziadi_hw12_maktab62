@@ -1,13 +1,19 @@
 <div class="product-card w-100">
-    <img src="<%= data[i].image%>" class="w-100">
+    <a href="/product<%= data[i].id%>">
+        <img src="<%= data[i].image%>" class="w-100"></a>
+
     <div>
         <h5>
-            <%= data[i].title%>
+            <a href="/product<%= data[i].id%>">
+                <%= data[i].title%>
+            </a>
+
         </h5>
         <h3>
             <%= data[i].price%>
         </h3>
         <span>تومان</span>
-        <a href="/product" id="<%= data[i].id%>" class="button">خرید</a>
+
     </div>
+    <a href="/product<%= data[i].id%>" id="<%= data[i].id%>" class="button">خرید</a>
 </div>

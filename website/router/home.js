@@ -6,7 +6,8 @@ let i;
 
 
 router.get("/", (req, res) => {
-    res.render("home", { data: producteJSON, i })
+    console.log(producteJSON.length);
+    res.render("home", { data: producteJSON, dataLenght: producteJSON.length, i })
         // res.send("hello")
 })
 
@@ -20,7 +21,7 @@ router.get("/about", (req, res) => {
     // res.send("hello")
 })
 
-router.get("/product/:id", (req, res) => {
+router.get("/product:id/", (req, res) => {
     res.render("product", { data: producteJSON, i: req.params.id });
     // res.send("hello")
 })
